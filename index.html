@@ -23,6 +23,7 @@
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
   </head>
   <body class="bg-[#15803D]/10">
     <!-- Nav-Bar -->
@@ -91,8 +92,25 @@
       <div class="flex-1"><img src="./assets/hero-leaf2.png" alt="" /></div>
     </section>
 
+    <section>
+      <h1 class="text-center text-2xl font-semibold p-5">Choose Your Trees</h1>
+      <div class="flex">
+        <div class="flex-1 border-2 border-red-500 ml-10">
+          <h1 class="font-semibold text-xl mb-2">Categories</h1>
+          <button class="rounded p-2 hover:bg-[#15803D] hover:text-white min-w-xs text-left">All Trees</button>
+          <div id="category-Container" >
+
+          </div>
+        </div>
+        <div id="tree-container" class="border-2 border-blue-500 grid grid-cols-3 gap-5">
+
+        </div>
+        <div class="flex-1 border-2">Cart</div>
+      </div>
+    </section>
+
     <!-- campain -->
-    <section class="md:mx-75 my-10">
+    <section class="hidden md:mx-75 my-10">
       <h1 class="text-center font-semibold text-2xl md:text-3xl">About the Campaign</h1>
       <div class="md:flex md:justify-center md:items-center gap-5 mt-5">
         <div class="flex-1 p-5 lg:p-0">
@@ -119,7 +137,7 @@
     </section>
 
     <!-- Our-Impact -->
-    <section class="bg-[#CFF0DC] p-10">
+    <section class="hidden bg-[#CFF0DC] p-10">
       <h1 class="text-center font-semibold text-3xl">Our Impact</h1>
       <div class="md:flex md:justify-center md:items-center mt-10 gap-10">
         <div class="card card-xs md:w-96 bg-base-100 md:card-md shadow-sm ">
@@ -144,7 +162,7 @@
     </section>
 
     <!-- plant-a-tree -->
-    <section class="bg-[#166534] p-10">
+    <section class="hidden bg-[#166534] p-10">
       <h2 class="text-white text-xl font-bold p-6 text-center">
         Plant a Tree Today
       </h2>
@@ -163,10 +181,13 @@
       </div>
     </section>
 
-    <footer class="bg-[#14532D] p-6">
+    <footer class="hidden bg-[#14532D] p-6">
       <p class="text-white text-center text-xs font-thin">
         © 2025 Green Earth. All Rights Reserved.
       </p>
     </footer>
+
+    <script src="./index.js"></script>
+
   </body>
 </html>
